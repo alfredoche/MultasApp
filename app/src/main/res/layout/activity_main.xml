@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.joseprincipe.multasapp.MainActivity.registromultas.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/NroCIP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CIP N: 12345" />
+
+        <TextView
+            android:id="@+id/NomPolicia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alfredo Che Esquerre" />
+
+        <ListView
+            android:id="@+id/listViewMultas"
+            android:layout_width="match_parent"
+            android:layout_height="402dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnNuevaMulta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nuevo" />
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Eliminar" />
+
+            <Button
+                android:id="@+id/btnEditar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Editar" />
+
+            <Button
+                android:id="@+id/btnSalir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="X"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
